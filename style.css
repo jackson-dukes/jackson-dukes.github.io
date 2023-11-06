@@ -1,24 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+@import url('https://fontawesome.com/icons/file-pdf?f=classic&s=solid');
 * {
     font-family: 'Poppins', sans-serif;
+    font-weight: 200;
 }
 /* Reset some default styles */
 body, h1, h2, p {
     margin: 0;
-    padding: 0;
+    padding: 0px, 20px;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f5f5f5;
     color: #333;
 }
-
+h2 {
+    font-weight: 500;
+}
 /* Style the header and navigation */
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 nav ul {
@@ -27,7 +31,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    padding: 10px;
 }
 
 nav a {
@@ -37,18 +41,57 @@ nav a {
 
 /* Style the intro section */
 #intro {
-    background-image: url('images/forest.png');
+    background-color: #146EBE;
     background-size: cover;
     text-align: center;
-    padding: 100px 0;
+    padding: 50px 0;
     color: #fff;
 }
 
 #intro h1 {
-    font-size: 36px;
+    font-size: 48px;
+    font-weight: 500;
+    opacity: 100%;
+}
+
+#intro p {
+    font-size: 24px;
 }
 
 /* Style the about, portfolio, and contact sections as needed */
+
+#about {
+    padding: 20px;
+}
+
+#about h2 {
+    font-size: 24px;
+}
+
+/* Style the portfolio section */
+#portfolio {
+    padding: 20px;
+}
+
+#portfolio h2 {
+    font-size: 24px;
+}
+
+/* Style the contact section */
+#contact {
+    padding: 20px;
+}
+
+#contact h2 {
+    font-size: 24px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #146EBE;
+    font-weight: 500;
+}
+
 
 .project {
     margin: 20px;
@@ -69,3 +112,30 @@ footer {
 }
 
 /* Add additional styles and media queries for responsiveness */
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.project {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin-right: 10px;
+}
+
+.project a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
