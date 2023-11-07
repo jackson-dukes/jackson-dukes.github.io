@@ -51,7 +51,7 @@ nav a {
     background-color: #146EBE;
     background-size: cover;
     text-align: center;
-    padding: 100px;
+    padding: 100px 50px;
     color: #fff;
 }
 
@@ -70,7 +70,7 @@ nav a {
 
 #about {
     text-align: center;
-    padding: 100px;
+    padding: 100px 50px;
 }
 
 #about h2 {
@@ -85,7 +85,7 @@ nav a {
 /* Style the projects section */
 #projects {
     text-align: center;
-    padding: 100px;
+    padding: 100px 50px;
 }
 
 #projects h2 {
