@@ -21,26 +21,6 @@ function prevProject() {
         updateCarousel();
     }
 }
-function copyEmail() {
-    // Specify the text you want to copy
-    var emailAddress = "jacksondukes@gmail.com";
-  
-    // Copy the specified text to the clipboard
-    navigator.clipboard.writeText(emailAddress);
-  
-    // Alert the copied text
-    alert("Copied email address");
-}
-function copyLinkedIn() {
-    // Specify the text you want to copy
-    var linkedInUrl = "https://www.linkedin.com/in/jacksondukes/";
-  
-    // Copy the specified text to the clipboard
-    navigator.clipboard.writeText(linkedInUrl);
-  
-    // Alert the copied text
-    alert("Copied LinkedIn URL");
-}
 
 document.querySelector('.carousel-container').addEventListener('click', (event) => {
     if (event.target.classList.contains('project')) {
