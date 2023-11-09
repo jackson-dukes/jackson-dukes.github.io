@@ -163,6 +163,7 @@ section {
 /* PROFILE SECTION */
 
 #profile {
+  position: relative;
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -299,13 +300,16 @@ section {
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding: 2rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  max-width: 600px; /* Set a maximum width to prevent excessive growth */
+  margin: auto; /* Center the container within its parent */
 }
 
 .section-container {
@@ -350,7 +354,6 @@ section {
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
   gap: 0.5rem;
 }
 
@@ -383,17 +386,6 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
-}
-
-.project-description {
-  text-align: left;
-  padding: 0.5rem;
-}
-
-.project-technologies {
-  text-align: left;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
 }
 
 /* CONTACT */
