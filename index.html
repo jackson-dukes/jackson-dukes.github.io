@@ -1,74 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jackson Dukes - GitHub Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="intro">
-        <h1>Jackson Dukes</h1>
-        <p>Software Developer | Web Programmer</p>
-    </section>
-
-    <section id="about">
-        <h2>ABOUT</h2>
-        <p>Welcome to my GitHub Page. I am a passionate developer actively seeking entry-level and junior developer opportunities. Explore my latest projects showcased below.</p>
-    </section>
-
-    <section id="projects">
-        <h2>PROJECTS</h2>
-            <div class="carousel-container">
-            <div class="carousel">
-                <div class="project">    
-                    <a href="https://guitarsetup.info"><img height="300" src="images/guitar-setup-guide.png" alt="Guitar Setup Guide"></a>
-                </div>
-                <!-- more projects to be added
-                <div class="project">
-                    <a href="project2.html">Project 2</a>
-                </div>
-                <div class="project">
-                    <a href="project3.html">Project 3</a>
-                </div>
-                -->
-                <!-- Add more project items as needed -->
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jackson Dukes' GitHub Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jackson Dukes</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jackson Dukes</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <!-- <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Jackson Dukes profile picture" />
+      </div> -->
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jackson Dukes</h1>
+        <p class="section__text__p2">Software Engineer | Web Programmer | App Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/jackson-dukes-resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/jacksondukes'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/jackson-dukes'"
+          />
+        </div>
+      </div>
     </section>
-
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+                <i class="fa-solid fa-gear fa-xl"></i>
+                <h3>Experience</h3>
+                <p>1+ years <br />Full-stack Development</p>
+            </div>
+            <div class="details-container">
+              <i class="fa-solid fa-school fa-xl"></i>
+              <h3>Education</h3>
+              <p>BS in Computer Science<br />Georgia State University</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As a recent Computer Science graduate with nine years of professional experience, I am actively seeking entry-level developer roles where I can apply my technical strengths in Java programming, software engineering, and full-stack development. I am a dynamic team player eager to leverage my skills and quick adaptability to learn new technologies swiftly. My track record demonstrates excellence in problem-solving, consistently delivering exceptional customer satisfaction. I am enthusiastic about contributing to innovative projects and further honing my skills within a collaborative and growth-oriented environment.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend</h2>
+            <div class="article-container">
+              <article>
+                <i class="fa-solid fa-circle-check fa-xl"></i>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check fa-xl"></i>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check fa-xl"></i>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check fa-xl"></i>
+                <div>
+                  <h3>React.js</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check fa-xl"></i>
+                <div>
+                  <h3>React Native</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend</h2>
+            <div class="article-container">
+              <article>
+                <i class="fa-solid fa-circle-check fa-xl"></i>
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check fa-xl"></i>
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check fa-xl"></i>
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check fa-xl"></i>
+                <div>
+                  <h3>PHP</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check fa-xl"></i>
+                <div>
+                  <h3>AWS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/guitar-setup-guide.png"
+                alt="Guitar Setup Guide"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Guitar Setup Guide Website</h2>
+            <p class="project-description">A multipage educational resource website to help electric guitar owners maintain their instruments properly.</p>
+            <p class="project-technologies">Technologies used: AWS EC2 Linux platform, Apache HTTP Server, HTML/CSS, JavaScript, jQuery, phpMyAdmin, SFTP, SSL certificate</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/jackson-dukes/guitar-setup-guide/', '_blank')"
+                >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://jackson-dukes.github.io/guitar-setup-guide/', '_blank')"
+                >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Coming Soon!</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#projects'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#projects'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
     <section id="contact">
-        <h2>CONTACT ME</h2>
-        <table>
-            <tr>
-                <td>Download my résumé: </td>
-                <td><a href="/files/jackson-dukes-resume.pdf" download><i class="fa-solid fa-file-pdf"></i></a></td>
-            </tr>
-            <tr>
-                <td>Send me an email: </td>
-                <td><a href="mailto:jacksondukes@gmail.com">jacksondukes@gmail.com</a></td>
-            </tr>
-            <tr>
-                <td>Connect on LinkedIn: </td>
-                <td><a href="https://www.linkedin.com/in/jacksondukes/">linkedin.com/in/jacksondukes</a></td>
-            </tr>
-        </table>
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jacksondukes@gmail.com">jacksondukes@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/jacksondukes" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
     </section>
-
     <footer>
-        <p>&copy; 2023 Jackson Dukes</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Jackson Dukes. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
-</body>
+    <script src="https://kit.fontawesome.com/73a1fa97da.js" crossorigin="anonymous"></script>
+  </body>
 </html>
