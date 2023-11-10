@@ -68,11 +68,9 @@
     .btn-container {
       flex-wrap: wrap;
     }
-    
     .project-img {
       min-width: 60vw;
     }
-
     .contact-info-container {
       margin: 0;
     }
@@ -80,6 +78,11 @@
     .nav-links li a {
       font-size: 1rem;
     }
+
+    .contact-info-container a:hover {
+      text-decoration: none;
+    }
+    
     .experience-sub-title {
       font-size: 1.25rem;
     }
