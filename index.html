@@ -1,337 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jackson Dukes' GitHub Page</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Jackson Dukes</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jackson Dukes — Software engineer focused on frontend, BFF, internal web applications, and AI-assisted development workflows." />
+  <meta name="theme-color" content="#f7f8fb" />
+  <title>Jackson Dukes | Software Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="page">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Jackson Dukes home">
+        <span class="brand-mark">JD</span>
+        <span>Jackson Dukes</span>
+      </a>
+
+      <div class="nav-actions">
+        <div class="nav-links" aria-label="Page sections">
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="mailto:jacksondukes@gmail.com">Contact</a>
+        </div>
+
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+          <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+          <span class="theme-toggle-text">Dark</span>
+        </button>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Jackson Dukes</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <!-- <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Jackson Dukes profile picture" />
-      </div> -->
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Jackson Dukes</h1>
-        <p class="section__text__p2">Software Engineer | Web Programmer | App Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/jackson-dukes-resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/jacksondukes'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/jackson-dukes'"
-          />
+
+    <section class="hero" id="top">
+      <div class="hero-card reveal">
+        <div class="eyebrow">Software Engineer · AI-assisted development</div>
+        <h1 class="hero-title">Software engineer focused on <span>web applications, API integration, and AI-assisted development workflows.</span></h1>
+        <p class="hero-summary">
+          I contribute to production features across frontend, backend-for-frontend, data, and UX environments. I’m especially interested in using AI-assisted development workflows to improve consistency, speed, and maintainability for internal software teams.
+        </p>
+
+        <div class="cta-row">
+          <a class="button primary" href="mailto:jacksondukes@gmail.com">Email me</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/jacksondukes" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="button secondary" href="https://github.com/jackson-dukes" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
-      <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#about'"
-      />  
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-                <i class="fa-solid fa-gear fa-xl"></i>
-                <h3>Experience</h3>
-                <p>1+ years <br />Full-stack Development</p>
-            </div>
-            <div class="details-container">
-              <i class="fa-solid fa-school fa-xl"></i>
-              <h3>Education</h3>
-              <p>BS in Computer Science<br />Georgia State University</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              As a recent Computer Science graduate with nine years of professional experience, I am actively seeking entry-level developer roles where I can apply my technical strengths in Java programming, software engineering, and full-stack development. I am a dynamic team player eager to leverage my skills and quick adaptability to learn new technologies swiftly. My track record demonstrates excellence in problem-solving, consistently delivering exceptional customer satisfaction. I am enthusiastic about contributing to innovative projects and further honing my skills within a collaborative and growth-oriented environment.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend</h2>
-            <div class="article-container">
-              <article>
-                <i class="fa-solid fa-circle-check fa-xl"></i>
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check fa-xl"></i>
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check fa-xl"></i>
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check fa-xl"></i>
-                <div>
-                  <h3>React.js</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check fa-xl"></i>
-                <div>
-                  <h3>React Native</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend</h2>
-            <div class="article-container">
-              <article>
-                <i class="fa-solid fa-circle-check fa-xl"></i>
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check fa-xl"></i>
-                <div>
-                  <h3>SQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check fa-xl"></i>
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check fa-xl"></i>
-                <div>
-                  <h3>PHP</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check fa-xl"></i>
-                <div>
-                  <h3>AWS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
+
+      <aside class="contact-card reveal" aria-label="Contact information">
+        <div class="profile-block">
+          <img src="headshot.jpg" alt="Jackson Dukes headshot" class="avatar-img" />
+          <div>
+            <h2>Jackson Dukes</h2>
+            <div class="contact-list">
+              <span>Lawrenceville, Georgia</span>
+              <a href="mailto:jacksondukes@gmail.com">jacksondukes@gmail.com</a>
+              <a href="tel:+17708707116">770-870-7116</a>
+              <a href="https://www.linkedin.com/in/jacksondukes" target="_blank" rel="noreferrer">linkedin.com/in/jacksondukes</a>
+              <a href="https://github.com/jackson-dukes" target="_blank" rel="noreferrer">github.com/jackson-dukes</a>
             </div>
           </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      </aside>
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/guitar-setup-guide.png"
-                alt="Guitar Setup Guide"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Guitar Setup Guide</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/jackson-dukes/guitar-setup-guide/', '_blank')"
-                >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://guitarsetup.info/', '_blank')"
-                >
-                Live Demo
-              </button>
+
+    <section class="focus-strip" aria-label="Professional focus areas">
+      <div class="focus-item reveal">Frontend UI</div>
+      <div class="focus-item reveal">Backend-for-frontend</div>
+      <div class="focus-item reveal">API integration</div>
+      <div class="focus-item reveal">AI-assisted workflows</div>
+    </section>
+
+    <div class="content-grid">
+      <div class="main-column">
+        <section class="section-card reveal" id="experience">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker">Experience</p>
+              <h2>Recent work</h2>
             </div>
           </div>
-          <!-- <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Coming Soon!</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='#projects'"
-              >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='#projects'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div> -->
-          <!--
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div> -->
-        </div>
+
+          <div class="timeline">
+            <article class="role">
+              <div class="role-top">
+                <h3>Acuity Inc. — Information Technology Leadership Program</h3>
+                <span class="role-meta">July 2024 – Present</span>
+              </div>
+              <p class="role-note">Rotational experience across enterprise data systems, manufacturing platforms, frontend/BFF applications, and UX prototyping.</p>
+              <ul>
+                <li>Remediated security vulnerabilities using Snyk and Aqua, developing a spec-driven AI-assisted workflow using structured instruction files and MCP tool integrations to improve efficiency and consistency.</li>
+                <li>Used MCP integration with Azure DevOps to retrieve, update, and execute against work items, enabling a task-driven AI-assisted development workflow.</li>
+                <li>Contributed to development and maintenance of multiple internal web applications used across the organization.</li>
+                <li>Built and enhanced UI functionality using JavaScript and React, integrating API-driven data into production features.</li>
+                <li>Worked across frontend and BFF layers to improve application usability and data flow.</li>
+                <li>Implemented Figma designs into responsive, production-ready UI using Astro, delivering multiple features per week in an NDA-constrained environment.</li>
+                <li>Built and documented reusable component libraries with Storybook to improve consistency and development speed.</li>
+                <li>Contributed to data source migrations and system improvements within manufacturing-related applications.</li>
+                <li>Developed dashboards using Power BI and Grafana, visualizing Application Insights telemetry for monitoring and decision-making.</li>
+                <li>Managed work items using Azure DevOps in an Agile environment.</li>
+              </ul>
+            </article>
+
+            <article class="role">
+              <div class="role-top">
+                <h3>Amdocs — Software Engineer Intern</h3>
+                <span class="role-meta">May 2022 – Aug 2022</span>
+              </div>
+              <ul>
+                <li>Worked with Java and Spring Boot to support backend service development.</li>
+                <li>Consumed APIs and processed returned data for application use.</li>
+                <li>Built HTML/CSS email templates for notification systems.</li>
+                <li>Managed work items using Jira in an Agile environment.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:jacksondukes@gmail.com">jacksondukes@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/jacksondukes" target="_blank">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Jackson Dukes. All Rights Reserved.</p>
+
+      <aside class="side-column">
+        <section class="section-card reveal" id="skills">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker">Skills</p>
+              <h2>Toolbox</h2>
+            </div>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3>Frontend</h3>
+              <div class="chips">
+                <span class="chip">JavaScript</span>
+                <span class="chip">React</span>
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Backend & APIs</h3>
+              <div class="chips">
+                <span class="chip">Java</span>
+                <span class="chip">C#</span>
+                <span class="chip">REST APIs</span>
+                <span class="chip">Cosmos DB</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Data & Monitoring</h3>
+              <div class="chips">
+                <span class="chip">Power BI</span>
+                <span class="chip">Grafana</span>
+                <span class="chip">Application Insights</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Design & UX</h3>
+              <div class="chips">
+                <span class="chip">Figma</span>
+                <span class="chip">Astro</span>
+                <span class="chip">Storybook</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Tools & AI</h3>
+              <div class="chips">
+                <span class="chip">Git</span>
+                <span class="chip">GitHub</span>
+                <span class="chip">Azure DevOps</span>
+                <span class="chip">Jira</span>
+                <span class="chip">VS Code</span>
+                <span class="chip">GitHub Copilot</span>
+                <span class="chip">Claude</span>
+                <span class="chip">MCP integrations</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-card education-card reveal" id="education">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker">Education</p>
+              <h2>Degree</h2>
+            </div>
+          </div>
+          <p><strong>B.S. Computer Science</strong>Georgia State University — 2023</p>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="footer">
+      © 2026 Jackson Dukes · Built for GitHub Pages
     </footer>
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/73a1fa97da.js" crossorigin="anonymous"></script>
-  </body>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
