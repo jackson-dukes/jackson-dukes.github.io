@@ -3,56 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jackson Dukes Resume</title>
+  <title>Jackson Dukes - Software Engineer Resume</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', Arial, sans-serif;
       background: #ffffff;
       color: #111827;
-      margin: 0;
-      padding: 48px 32px;
+      margin: 0 auto;
+      padding: 42px 32px;
       max-width: 850px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.5;
+      line-height: 1.42;
     }
 
     h1 {
       font-size: 30px;
-      margin-bottom: 4px;
+      margin: 0 0 4px;
       font-weight: 700;
     }
 
     h2 {
       font-size: 14px;
-      margin-top: 32px;
-      margin-bottom: 8px;
+      margin: 25px 0 8px;
       text-transform: uppercase;
       letter-spacing: 0.08em;
     }
 
     h3 {
       font-size: 14px;
-      margin: 12px 0 2px 0;
+      margin: 12px 0 2px;
       font-weight: 600;
     }
 
     p {
-      font-size: 13px;
+      font-size: 12.7px;
       margin: 4px 0;
     }
 
     ul {
-      margin: 6px 0 12px 18px;
+      margin: 6px 0 11px 18px;
       padding: 0;
     }
 
     li {
-      font-size: 13px;
-      margin-bottom: 4px;
+      font-size: 12.7px;
+      margin-bottom: 3px;
     }
 
     .subtle {
@@ -61,11 +58,11 @@
     }
 
     .header {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .section {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .divider {
@@ -75,13 +72,63 @@
     }
 
     @media print {
-      body {
-        padding: 24px;
+      @page {
+        size: letter;
+        margin: 0;
       }
+
+      body {
+        max-width: none;
+      }
+
+      body.resume-fit-1 {
+        padding: 0.5in;
+        line-height: 1.42;
+      }
+
+      .resume-fit-1 h1 { font-size: 25px; }
+      .resume-fit-1 h2 { margin: 24px 0 6px; }
+      .resume-fit-1 h3 { margin-top: 10px; }
+      .resume-fit-1 p,
+      .resume-fit-1 li { font-size: 12.5px; }
+      .resume-fit-1 ul { margin-bottom: 10px; }
+      .resume-fit-1 li { margin-bottom: 3px; }
+
+      body.resume-fit-2 {
+        padding: 0.42in;
+        line-height: 1.34;
+      }
+
+      .resume-fit-2 h1 { font-size: 27px; }
+      .resume-fit-2 h2 { margin: 20px 0 5px; font-size: 13px; }
+      .resume-fit-2 h3 { margin: 8px 0 2px; font-size: 13px; }
+      .resume-fit-2 p,
+      .resume-fit-2 li { font-size: 12px; }
+      .resume-fit-2 .subtle { font-size: 11px; }
+      .resume-fit-2 .header { margin-bottom: 14px; }
+      .resume-fit-2 .section { margin-bottom: 8px; }
+      .resume-fit-2 ul { margin: 5px 0 8px 16px; }
+      .resume-fit-2 li { margin-bottom: 2px; }
+
+      body.resume-fit-3 {
+        padding: 0.34in;
+        line-height: 1.26;
+      }
+
+      .resume-fit-3 h1 { font-size: 24px; }
+      .resume-fit-3 h2 { margin: 15px 0 4px; font-size: 12px; }
+      .resume-fit-3 h3 { margin: 6px 0 1px; font-size: 12px; }
+      .resume-fit-3 p,
+      .resume-fit-3 li { font-size: 11.4px; }
+      .resume-fit-3 .subtle { font-size: 10.5px; }
+      .resume-fit-3 .header,
+      .resume-fit-3 .section { margin-bottom: 6px; }
+      .resume-fit-3 ul { margin: 4px 0 6px 15px; }
+      .resume-fit-3 li { margin-bottom: 1px; }
     }
   </style>
 </head>
-<body>
+<body class="resume-fit-2">
 
   <div class="header">
     <h1>Jackson Dukes</h1>
@@ -95,7 +142,7 @@
     <h2>Summary</h2>
     <div class="divider"></div>
     <p>
-      Software engineer with experience contributing to web applications across frontend, backend-for-frontend, data, and UX environments. Comfortable building production-ready features, integrating APIs, and working in Agile teams. Focused on improving development efficiency and consistency through AI-assisted workflows and developer tooling.
+      Junior software engineer with experience contributing across frontend, backend-for-frontend, APIs, data, observability, security, and manufacturing systems. Comfortable moving between technical areas, learning unfamiliar codebases and tools, and delivering practical solutions in Agile environments. Hands-on experience with React.js, Astro, Storybook, REST APIs, GitHub workflows, and AI-assisted development using GitHub Copilot, Claude, and Codex.
     </p>
   </div>
 
@@ -103,49 +150,47 @@
     <h2>Experience</h2>
     <div class="divider"></div>
 
-    <h3>Acuity Inc. — Information Technology Leadership Program</h3>
-    <p class="subtle">July 2024 – Present</p>
-    <p class="subtle">4 six-month rotations across enterprise data systems, manufacturing platforms, frontend/BFF applications, and UX prototyping</p>
+    <h3>Acuity Inc. — Junior Software Engineer</h3>
+    <p class="subtle">Information Technology Leadership Program | July 2024 – Present</p>
+    <p class="subtle">Rotational software engineering role across enterprise data, manufacturing platforms, frontend/BFF applications, and rapid web prototyping</p>
 
     <ul>
-      <li>Remediated security vulnerabilities using Snyk and Aqua, developing a spec-driven AI-assisted workflow using structured instruction files (e.g., SKILL.md) and MCP tool integrations to improve efficiency and consistency</li>
-      <li>Used MCP integration with Azure DevOps to retrieve, update, and execute against work items, enabling a task-driven AI-assisted development workflow</li>
-      <li>Contributed to development and maintenance of multiple internal web applications used across the organization</li>
-      <li>Built and enhanced UI functionality using JavaScript and React, integrating API-driven data into production features</li>
-      <li>Worked across frontend and BFF layers to improve application usability and data flow</li>
-      <li>Implemented Figma designs into responsive, production-ready UI using Astro, delivering multiple features per week in an NDA-constrained environment</li>
-      <li>Built and documented reusable component libraries with Storybook to improve consistency and development speed</li>
-      <li>Contributed to data source migrations and system improvements within manufacturing-related applications</li>
-      <li>Developed dashboards using Power BI and Grafana, visualizing Application Insights telemetry for monitoring and decision-making</li>
-      <li>Managed work items using Azure DevOps in an Agile environment</li>
+      <li>Contribute across multiple engineering environments, adapting to unfamiliar codebases, tools, and business domains throughout four technical rotations</li>
+      <li>Built and enhanced React user interfaces and backend-for-frontend integrations for internal applications, incorporating API-driven data into production features</li>
+      <li>Build responsive pages and reusable components with React.js and Astro for an NDA-protected website prototype, delivering several features and pages each week</li>
+      <li>Translate designer-provided Figma layouts and visual references into functional web pages and features, documenting reusable components in Storybook</li>
+      <li>Collaborate with Product Owners and cross-functional partners to clarify requirements, review progress, and iterate on features</li>
+      <li>Use GitHub Copilot, Claude, and Codex to support implementation, debugging, refactoring, and documentation while reviewing and validating generated code</li>
+      <li>Developed AI-assisted security remediation workflows using Snyk, Aqua, structured instruction files, and MCP integrations with Azure DevOps</li>
+      <li>Contributed to manufacturing application improvements and data migrations, and created Power BI and Grafana dashboards using Application Insights telemetry</li>
+      <li>Manage source control, code collaboration, and work tracking using Git, GitHub, Azure DevOps, and Jira</li>
     </ul>
 
     <h3>Amdocs — Software Engineer Intern</h3>
     <p class="subtle">May 2022 – Aug 2022</p>
     <ul>
-      <li>Worked with Java and Spring Boot to support backend service development</li>
+      <li>Supported backend service development using Java and Spring Boot</li>
       <li>Consumed APIs and processed returned data for application use</li>
-      <li>Built HTML/CSS email templates for notification systems</li>
+      <li>Built HTML and CSS email templates for notification systems</li>
       <li>Managed work items using Jira in an Agile environment</li>
     </ul>
-
   </div>
 
   <div class="section">
     <h2>Skills</h2>
     <div class="divider"></div>
-    <p>Frontend: JavaScript, React, HTML, CSS</p>
-    <p>Backend: Java, C#, REST APIs, Cosmos DB</p>
-    <p>Data: Power BI, Grafana, Application Insights</p>
-    <p>Design & UX: Figma, Astro, Storybook</p>
-    <p>Tools: Git, GitHub, Azure DevOps, Jira, VS Code</p>
-    <p>AI Tools: GitHub Copilot, Claude, MCP integrations</p>
+    <p><strong>Frontend & Web:</strong> JavaScript, React.js, Astro, HTML, CSS, Storybook</p>
+    <p><strong>Backend & APIs:</strong> Java, C#, REST APIs, Cosmos DB</p>
+    <p><strong>Data, Observability & Security:</strong> Power BI, Grafana, Application Insights, Snyk, Aqua</p>
+    <p><strong>Engineering Tools:</strong> Git, GitHub, Azure DevOps, Jira, VS Code</p>
+    <p><strong>AI-Assisted Development:</strong> GitHub Copilot, Claude, Codex, MCP integrations</p>
+    <p><strong>Collaboration:</strong> Agile delivery, Product Owner collaboration, Figma design handoff, cross-functional teams</p>
   </div>
 
   <div class="section">
     <h2>Education</h2>
     <div class="divider"></div>
-    <p>B.S. Computer Science</p>
+    <p><strong>B.S. Computer Science</strong></p>
     <p>Georgia State University — 2023</p>
   </div>
 
