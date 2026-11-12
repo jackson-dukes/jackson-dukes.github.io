@@ -1,197 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jackson Dukes - Software Engineer Resume</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      font-family: 'Inter', Arial, sans-serif;
-      background: #ffffff;
-      color: #111827;
-      margin: 0 auto;
-      padding: 42px 32px;
-      max-width: 850px;
-      line-height: 1.42;
-    }
-
-    h1 {
-      font-size: 30px;
-      margin: 0 0 4px;
-      font-weight: 700;
-    }
-
-    h2 {
-      font-size: 14px;
-      margin: 25px 0 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    h3 {
-      font-size: 14px;
-      margin: 12px 0 2px;
-      font-weight: 600;
-    }
-
-    p {
-      font-size: 12.7px;
-      margin: 4px 0;
-    }
-
-    ul {
-      margin: 6px 0 11px 18px;
-      padding: 0;
-    }
-
-    li {
-      font-size: 12.7px;
-      margin-bottom: 3px;
-    }
-
-    .subtle {
-      color: #6b7280;
-      font-size: 12px;
-    }
-
-    .header {
-      margin-bottom: 18px;
-    }
-
-    .section {
-      margin-bottom: 10px;
-    }
-
-    .divider {
-      height: 1px;
-      background: #e5e7eb;
-      margin-top: 8px;
-    }
-
-    @media print {
-      @page {
-        size: letter;
-        margin: 0;
-      }
-
-      body {
-        max-width: none;
-      }
-
-      body.resume-fit-1 {
-        padding: 0.5in;
-        line-height: 1.42;
-      }
-
-      .resume-fit-1 h1 { font-size: 25px; }
-      .resume-fit-1 h2 { margin: 24px 0 6px; }
-      .resume-fit-1 h3 { margin-top: 10px; }
-      .resume-fit-1 p,
-      .resume-fit-1 li { font-size: 12.5px; }
-      .resume-fit-1 ul { margin-bottom: 10px; }
-      .resume-fit-1 li { margin-bottom: 3px; }
-
-      body.resume-fit-2 {
-        padding: 0.42in;
-        line-height: 1.34;
-      }
-
-      .resume-fit-2 h1 { font-size: 27px; }
-      .resume-fit-2 h2 { margin: 20px 0 5px; font-size: 13px; }
-      .resume-fit-2 h3 { margin: 8px 0 2px; font-size: 13px; }
-      .resume-fit-2 p,
-      .resume-fit-2 li { font-size: 12px; }
-      .resume-fit-2 .subtle { font-size: 11px; }
-      .resume-fit-2 .header { margin-bottom: 14px; }
-      .resume-fit-2 .section { margin-bottom: 8px; }
-      .resume-fit-2 ul { margin: 5px 0 8px 16px; }
-      .resume-fit-2 li { margin-bottom: 2px; }
-
-      body.resume-fit-3 {
-        padding: 0.34in;
-        line-height: 1.26;
-      }
-
-      .resume-fit-3 h1 { font-size: 24px; }
-      .resume-fit-3 h2 { margin: 15px 0 4px; font-size: 12px; }
-      .resume-fit-3 h3 { margin: 6px 0 1px; font-size: 12px; }
-      .resume-fit-3 p,
-      .resume-fit-3 li { font-size: 11.4px; }
-      .resume-fit-3 .subtle { font-size: 10.5px; }
-      .resume-fit-3 .header,
-      .resume-fit-3 .section { margin-bottom: 6px; }
-      .resume-fit-3 ul { margin: 4px 0 6px 15px; }
-      .resume-fit-3 li { margin-bottom: 1px; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jackson Dukes - Software Engineer Resume</title>
+<style>@page { size: letter; margin: 0.48in 0.52in; }
+* { box-sizing: border-box; }
+body { margin: 0; color: #17202a; font: 10pt/1.28 Arial, Helvetica, sans-serif; }
+main { max-width: 7.45in; margin: auto; }
+h1 { font-size: 22pt; margin: 0 0 4pt; }
+h2 { font-size: 10pt; text-transform: uppercase; letter-spacing: 0.07em; border-bottom: 1px solid #b8bec6; padding-bottom: 3pt; margin: 12pt 0 5pt; }
+h3 { font-size: 10.5pt; margin: 8pt 0 2pt; }
+p { margin: 3pt 0; }
+ul { margin: 4pt 0 6pt; padding-left: 14pt; }
+li { margin-bottom: 3pt; }
+header p { font-size: 9pt; }
+h2, h3 { break-after: avoid; }
+li { break-inside: avoid; }
+@media screen { body { padding: 36px; background: #fff; } }
+</style>
 </head>
-<body class="resume-fit-2">
-
-  <div class="header">
-    <h1>Jackson Dukes</h1>
-    <p class="subtle">
-      Georgia, USA • jacksondukes@gmail.com • 770-870-7116<br>
-      linkedin.com/in/jacksondukes • github.com/jackson-dukes
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Summary</h2>
-    <div class="divider"></div>
-    <p>
-      Software engineer with experience across frontend, backend-for-frontend, APIs, enterprise data, observability, and security. Translated provided designs into functional web experiences and built reusable components, collaborating with design and engineering teams. Adaptable across codebases and tools, with a focus on practical software solutions, Agile delivery, and AI-assisted development.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Experience</h2>
-    <div class="divider"></div>
-
-    <h3>Acuity Inc. — Software Engineer</h3>
-    <p class="subtle">Information Technology Leadership Program | July 2024 – July 2026</p>
-    <p class="subtle">Rotational software engineering role across enterprise data, manufacturing platforms, frontend/BFF applications, and rapid web prototyping</p>
-
-    <ul>
-      <li>Implemented responsive, interactive web prototypes for the Peerless Lighting rebrand, translating designs from design engineers into functional interfaces using Astro, JavaScript, HTML, and CSS</li>
-      <li>Delivered working prototypes for leadership presentations throughout the rebrand, supporting stakeholder review of evolving designs</li>
-      <li>Built and documented reusable UI components with Storybook as part of broader UX and frontend development work</li>
-      <li>Built and enhanced React user interfaces and backend-for-frontend integrations, incorporating REST API data into internal application features</li>
-      <li>Collaborated with product owners and cross-functional teams in Agile development, using Git, GitHub, and Azure DevOps for code collaboration and work tracking</li>
-      <li>Used GitHub Copilot, Claude, and Codex for implementation, debugging, refactoring, and documentation while reviewing and validating generated code</li>
-      <li>Developed AI-assisted security remediation workflows using Snyk, Aqua, structured instruction files, and MCP integrations with Azure DevOps</li>
-      <li>Contributed to enterprise data migrations and manufacturing application improvements, and created Power BI and Grafana dashboards using Application Insights telemetry</li>
-    </ul>
-
-    <h3>Amdocs — Software Engineer Intern</h3>
-    <p class="subtle">May 2022 – Aug 2022</p>
-    <ul>
-      <li>Supported backend service development using Java and Spring Boot</li>
-      <li>Consumed APIs and processed returned data for application use</li>
-      <li>Built HTML and CSS email templates for notification systems</li>
-      <li>Managed work items using Jira in an Agile environment</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Skills</h2>
-    <div class="divider"></div>
-    <p><strong>Frontend & Web:</strong> JavaScript, React.js, Astro, HTML, CSS, Storybook</p>
-    <p><strong>Backend & APIs:</strong> Java, C#, REST APIs, Cosmos DB</p>
-    <p><strong>Data, Observability & Security:</strong> Power BI, Grafana, Application Insights, Snyk, Aqua</p>
-    <p><strong>Engineering Tools:</strong> Git, GitHub, Azure DevOps, Jira, VS Code</p>
-    <p><strong>AI-Assisted Development:</strong> GitHub Copilot, Claude, Codex, MCP integrations</p>
-    <p><strong>Collaboration:</strong> Agile delivery, Product Owner collaboration, Figma design handoff, cross-functional teams</p>
-  </div>
-
-  <div class="section">
-    <h2>Education</h2>
-    <div class="divider"></div>
-    <p><strong>B.S. Computer Science</strong></p>
-    <p>Georgia State University — 2023</p>
-  </div>
-
+<body>
+<main>
+<header>
+<h1>Jackson Dukes</h1>
+<p>Georgia, USA | jacksondukes@gmail.com | 770-870-7116<br>linkedin.com/in/jacksondukes | github.com/jackson-dukes</p>
+</header>
+<section>
+<h2>Summary</h2>
+<p>Software engineer with experience in frontend and backend development, REST API integrations, application troubleshooting, and root cause investigation. Built React.js features and Astro prototypes, refactored C# controllers, and contributed to Java/Spring Boot services. Technical skills span SQL, Azure Application Insights, Grafana, Power BI, and cross-functional Agile delivery.</p>
+</section>
+<section>
+<h2>Skills</h2>
+<p><strong>Languages:</strong> JavaScript, TypeScript, Java, C#, SQL</p>
+<p><strong>Frontend:</strong> React, Astro, HTML, CSS, Storybook, Figma</p>
+<p><strong>Backend and data:</strong> Spring Boot, REST APIs, Cassandra, Kafka</p>
+<p><strong>Observability:</strong> Azure Application Insights, Grafana, Power BI</p>
+<p><strong>Tools and delivery:</strong> Git, GitHub, Azure DevOps, Jira, Agile, CI/CD</p>
+<p><strong>Quality and documentation:</strong> testing, debugging, technical documentation</p>
+<p><strong>Security:</strong> Snyk, Aqua</p>
+</section>
+<section>
+<h2>Experience</h2>
+<h3>Acuity Inc.</h3>
+<p><strong>Specialist Information Technology Leadership Program</strong><br>July 2024 - July 2026</p>
+<p>Rotations in frontend application development, enterprise data and application development, and UX prototyping</p>
+<ul>
+<li>Developed React UI features and integrated API data into production applications.</li>
+<li>Consolidated approximately 15 C# controllers using a shared BaseController pattern.</li>
+<li>Built responsive Astro interfaces and live prototypes for the Peerless Lighting website rebrand.</li>
+<li>Built and documented reusable Storybook components for frontend development.</li>
+<li>Troubleshot application issues and third-party integrations, investigating behavior across application layers.</li>
+<li>Developed Power BI and Grafana dashboards using Azure Application Insights telemetry to investigate application behavior.</li>
+<li>Contributed to PDF editor and document-generation improvements.</li>
+<li>Worked with cross-functional teams to clarify requirements, debug application behavior, and deliver features in Agile rotations.</li>
+<li>Remediated vulnerabilities using Snyk and Aqua and used Azure DevOps and Git for development workflows.</li>
+</ul>
+<h3>Amdocs</h3>
+<p><strong>Software Engineer Intern</strong><br>June 2022 - August 2022</p>
+<p>CatalogONE</p>
+<ul>
+<li>Worked on CatalogONE backend services using Java, Spring Boot, Cassandra, and Kafka.</li>
+<li>Consumed APIs and processed returned data for application use.</li>
+</ul>
+</section>
+<section>
+<h2>Education</h2>
+<p><strong>B.S. Computer Science</strong>, Georgia State University | May 2023<br>Magna Cum Laude; GPA 3.7</p>
+</section>
+</main>
 </body>
 </html>
